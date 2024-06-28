@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background: lightyellow;
+}
+#app {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border-radius:5px;
+    border: 1px solid #454545;
+}
+.texts{
+    margin-top: 6%;
+}
+.texts h1{
+    font-size: 43px;
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius:5px;
+    border: 1px solid #454545;
+    width:50%;
+    background-color: #ffefcc;
+}
+label {
+    padding: 10px 20px;
+    margin: 10px;
+    
+    font-size: 30px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+#nav {
+    margin-bottom: 20px;
+    width:100%;
+}
+select {
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-left: 550px;;
+}
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-content {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding:5px;
+}
+.top-right-div {
+    display: flex;
+    flex-direction: row;
+    min-width: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#todo{
+    display:flex;
+    flex-direction: column;
+}
+.task-datetime {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    margin-top: 5px; /* Adjust as needed */
+    align-items:flex-start;
+}

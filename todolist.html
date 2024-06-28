@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+    <div id="app">
+        <div class="texts" id ="AppName">
+            <h2 id="welcome-msg">Welcome to</h2>
+            <h1 id="company-name">To Do List Website.</h1>
+        </div>
+        <div id="auth">
+            <h2>Sign Up / Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="signup()">Sign Up</button>
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="nav" style="display: none;">
+            <label onclick="showProfile()">Edit Profile</label>
+            <label onclick="showTodo()">Add Task</label>
+            <label class="welcome"></label>
+            <hr>
+        </div>
+        <div id="profile" style="display: none;">
+            <h2>Edit Profile</h2>
+            <input type="text" id="newUsername" placeholder="New Username">
+            <input type="password" id="newPassword" placeholder="New Password">
+            <button onclick="editProfile()">Save</button>
+            <button onclick="resetPassword()">Reset Password</button>
+        </div>
+        <div id="todo" style="display: none;">
+            <h2>To Do List</h2>
+            <input type="text" id="taskInput" placeholder="New Task">
+            <input type="date" id="taskDate">
+            <input type="time" id="taskTime">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <script src="todolist.js"></script>
+</body>
+</html>
